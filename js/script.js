@@ -1,13 +1,14 @@
-const fetchData = () => {
-  fetch("https://api.kanye.rest/")
-    .then((res) => res.json())
-    .then((data) => fetchTheData(data));
-};
+// const fetchData = () => {
+//   fetch("https://api.kanye.rest/")
+//     .then((res) => res.json())
+//     .then((data) => fetchTheData(data));
+// };
 
-function fetchTheData(data) {
-  let getId = document.getElementById("quote");
-  getId.innerHTML = `
-  ${data.quote}
-
-    `;
-}
+// function fetchTheData(data) {
+//   let getId = document.getElementById("quote");
+//   getId.innerHTML = `
+//   ${data.quote}
+//     `;
+// }
+const data = { result: [{ userName: { title: "Mr.", name: "sakib khan" } }] };
+console.log(data.name);
